@@ -4,102 +4,112 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
 
     <title>Day Planner</title>
 </head>
-<body>
-    <header class="jumbotron">
+<html>
+    <header class="header">
         <h1 class="display-4">Daily Schedule Planner</h1>
         <p class="lead">Schedule your day the simple way!</p>
         <p id="today" class="lead"></p>
     </header>
 
-    <div class="day-container"
+    <div class="day-container ">
 
+        <!-- Timeblocks go here -->
         <div class="input-group input-group-lg">
-            <div class="input-group-prepend">
+          <div class="input-group-prepend">
             <span class="input-group-text bg-light border-left-0 rounded-0 custom-time-box">9AM</span>
-            </div>
-            <input data-time="9" id="9am-text" type="text" rows= "3" class="form-control border border-dark" >
-            <div class="input-group-append">
+          </div>
+          <input data-time="9" id="9am-text" type="text" rows= "3" class="form-control border border-dark" >
+          <div class="input-group-append">
             <button id="9am-btn" class="btn btn-outline-secondary custom-save-btn bg-primary" type="button">✅</button>
-            </div>
+          </div>
         </div>
-        
+  
         <div class="input-group input-group-lg">
-            <div class="input-group-prepend">
+          <div class="input-group-prepend">
             <span class="input-group-text bg-light border-left-0 rounded-0 custom-time-box">10AM</span>
-            </div>
-            <input data-time="10" id="10am-text" type="text" rows= "3" class="form-control border border-dark" >
-            <div class="input-group-append">
+          </div>
+          <input data-time="10" id="10am-text" type="text" rows= "3" class="form-control border border-dark"  >
+          <div class="input-group-append">
             <button id="10am-btn" class="btn btn-outline-secondary custom-save-btn bg-primary" type="button">✅</button>
-            </div>
+          </div>
         </div>
+  
         <div class="input-group input-group-lg">
-            <div class="input-group-prepend">
+          <div class="input-group-prepend">
             <span class="input-group-text bg-light border-left-0 rounded-0 custom-time-box">11AM</span>
-            </div>
-            <input data-time="11" id="11am-text" type="text" rows= "3" class="form-control border border-dark" >
-            <div class="input-group-append">
-            <button id="11am-btn" class="btn btn-outline-secondary custom-save-btn bg-primary" type="button">✅</button>
-            </div>
+          </div>
+          <input data-time="11" id="11am-text" type="text" rows= "3" class="form-control border border-dark"  >
+          <div class="input-group-append">
+            <button id="11am-btn"class="btn btn-outline-secondary custom-save-btn bg-primary" type="button">✅</button>
+          </div>
         </div>
+  
         <div class="input-group input-group-lg">
-            <div class="input-group-prepend">
+          <div class="input-group-prepend">
             <span class="input-group-text bg-light border-left-0 rounded-0 custom-time-box">12PM</span>
-            </div>
-            <input data-time="12" id="12pm-text" type="text" rows= "3" class="form-control border border-dark" >
-            <div class="input-group-append">
+          </div>
+          <input data-time="12" id="12pm-text" type="text" rows= "3" class="form-control border border-dark"  >
+          <div class="input-group-append">
             <button id="12pm-btn" class="btn btn-outline-secondary custom-save-btn bg-primary" type="button">✅</button>
-            </div>
+          </div>
         </div>
+  
         <div class="input-group input-group-lg">
-            <div class="input-group-prepend">
+          <div class="input-group-prepend">
             <span class="input-group-text bg-light border-left-0 rounded-0 custom-time-box">1PM</span>
-            </div>
-            <input data-time="1" id="1pm-text" type="text" rows= "3" class="form-control border border-dark" >
-            <div class="input-group-append">
+          </div>
+          <input data-time="13" id="1pm-text" type="text" rows= "3" class="form-control border border-dark"  >
+          <div class="input-group-append">
             <button id="1pm-btn" class="btn btn-outline-secondary custom-save-btn bg-primary" type="button">✅</button>
-            </div>
+          </div>
         </div>
+  
         <div class="input-group input-group-lg">
-            <div class="input-group-prepend">
+          <div class="input-group-prepend">
             <span class="input-group-text bg-light border-left-0 rounded-0 custom-time-box">2PM</span>
-            </div>
-            <input data-time="2" id="2pm-text" type="text" rows= "3" class="form-control border border-dark" >
-            <div class="input-group-append">
+          </div>
+          <input data-time="14" id="2pm-text" type="text" rows= "3" class="form-control border border-dark"  >
+          <div class="input-group-append">
             <button id="2pm-btn" class="btn btn-outline-secondary custom-save-btn bg-primary" type="button">✅</button>
-            </div>
+          </div>
         </div>
+  
         <div class="input-group input-group-lg">
-            <div class="input-group-prepend">
+          <div class="input-group-prepend">
             <span class="input-group-text bg-light border-left-0 rounded-0 custom-time-box">3PM</span>
-            </div>
-            <input data-time="3" id="3pm-text" type="text" rows= "3" class="form-control border border-dark" >
-            <div class="input-group-append">
+          </div>
+          <input data-time="15" id="3pm-text" type="text" rows= "3" class="form-control border border-dark"  >
+          <div class="input-group-append">
             <button id="3pm-btn" class="btn btn-outline-secondary custom-save-btn bg-primary" type="button">✅</button>
-            </div>
+          </div>
         </div>
+  
         <div class="input-group input-group-lg">
-            <div class="input-group-prepend">
+          <div class="input-group-prepend">
             <span class="input-group-text bg-light border-left-0 rounded-0 custom-time-box">4PM</span>
-            </div>
-            <input data-time="4" id="4pm-text" type="text" rows= "3" class="form-control border border-dark" >
-            <div class="input-group-append">
+          </div>
+          <input data-time="16" id="4pm-text" type="text" rows= "3" class="form-control border border-dark"  >
+          <div class="input-group-append">
             <button id="4pm-btn" class="btn btn-outline-secondary custom-save-btn bg-primary" type="button">✅</button>
-            </div>
+          </div>
         </div>
+  
         <div class="input-group input-group-lg">
-            <div class="input-group-prepend">
+          <div class="input-group-prepend">
             <span class="input-group-text bg-light border-left-0 rounded-0 custom-time-box">5PM</span>
-            </div>
-            <input data-time="5" id="5pm-text" type="text" rows= "3" class="form-control border border-dark" >
-            <div class="input-group-append">
+          </div>
+          <input data-time="17" id="5pm-text" type="text" rows= "3" class="form-control border border-dark"  >
+          <div class="input-group-append">
             <button id="5pm-btn" class="btn btn-outline-secondary custom-save-btn bg-primary" type="button">✅</button>
-            </div>
+          </div>
         </div>
+      </div>
 
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/js/bootstrap.min.js"></script>
-        <script src="./script.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/js/bootstrap.min.js"></script>
+<script src="./script.js"></script>
 </body>
 </html>

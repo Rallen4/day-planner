@@ -1,0 +1,22 @@
+body {
+    background-image: url(./WALL\ VIBES.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    flex-wrap: wrap;
+    min-height: 100vh;
+}
+
+.header {
+    margin: 0 auto;
+    justify-content: space-between;
+    text-align: center;
+    font-family: 'Courier New', Courier, monospace;
+    text-shadow: 0.5px 0.5px red;
+    font-size: larger;
+} 
+
+.day-container {
+    text-align: center;
+    text-shadow: 1px 1px red;
+    color: yellow;
+}
