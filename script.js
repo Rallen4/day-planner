@@ -11,20 +11,25 @@ var allTime = (day + ", " + dayMoYr);
             var timeBlock = $("#" + i)
             var textBoxes = $(".description");
             var saveBtn = $(".saveBtn");
-            var blockHour = $(this).attr("id")
+            var blockHour = parseInt($(this).attr("id"))
             if(currentHour < blockHour) {
                 $(this).addClass("past") 
             } else if(currentHour === blockHour) {
-                $(this).parse
-            }
+                $(this).addClass("present")
+            } else {$(this).addClass("future")}
         }
-
     }
+    createColors();
 
+    $(".saveBtn").on("click", function() {
+        var value = $(this).siblings(".description").val()
+        var time = $(this).parent().attr("id")
+        localStorage()
+        var todos = JSON.parse(window.localStorage.getItem("todos")) || []
+        todos.push({time, value});
+        window.localStorage.setItem("todos", JSON.stringify(todos))
+        
 
-var calenderInput = document.getElementById("span");
-var toDAY = document.getElementById("today");
-var saveBtn = $("button");
-var textInput = $("input");
-document.getElementById("today").innerHTML = allTime
+    })
+
 })
