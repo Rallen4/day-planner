@@ -26,15 +26,17 @@ var currentHour = moment().hours();
         var todos = JSON.parse(window.localStorage.getItem("todos")) || []
         todos.push({time, value});
         window.localStorage.setItem("todos", JSON.stringify(todos))
-        var savedData = JSON.parse(window.localStorage.getItem("todos"))
+
+    })
+    var savedData = JSON.parse(window.localStorage.getItem("todos"))
         console.log(savedData)
+        $(".description").each(function() {
+        var id = $(this).parent().attr("id")
         for (let i = 0; i < savedData.length; i++) {
-            var id = parseInt($(this).attr("id"))
             var element = savedData[i]
             if(id = element.time) {
                 $(this).text(element.value)
             }
         }
-
     })
 })
